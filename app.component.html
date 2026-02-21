@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span>Smart Event Planner</span>
+  <span class="spacer"></span>
+  
+  <div *ngIf="isLoggedIn()" class="logged-in-section">
+    <button mat-button routerLink="/events">Events</button>
+    
+    <button *ngIf="isOrganizer()" mat-button routerLink="/organizer/dashboard">
+      Dashboard
+    </button>
+
+    <span class="user-info">{{ getCurrentRole() }}</span>
+    
+    <button mat-button (click)="logout()" color="accent">
+      Logout
+    </button>
+  </div>
+</mat-toolbar>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
+

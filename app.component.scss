@@ -1,0 +1,25 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  margin-bottom: 20px;
+}
+
+main {
+  min-height: calc(100vh - 100px);
+}
+
+.logged-in-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-info {
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+}
+
